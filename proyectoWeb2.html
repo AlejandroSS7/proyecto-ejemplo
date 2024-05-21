@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del nuevo modelo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+             
+            
+        }
+
+        .item img {
+            max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de aspecto */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Nombre del Celular</a>
+        <!-- Botón para colapsar el navbar en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#specs">Especificaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Sección de Inicio -->
+    <section id="home">
+        <div class="container">
+            <h1>Bienvenido al Nuevo Modelo de Celular</h1>
+            <p>Descubre todas las increíbles características que tiene para ofrecerte.</p>
+            <a href="#features" class="btn btn-primary">Ver características</a>
+        </div>
+    </section>
+    
+    <!-- Sección de Características -->
+    <section id="features">
+        <div class="container">
+            <h2>Características Principales</h2>
+            <ul>
+                <li>Cámara de alta resolución</li>
+                <li>Pantalla AMOLED de última generación</li>
+                <li>Batería de larga duración</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Sección de Galería -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Galería de Imágenes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/1.jpg" alt="Imagen 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/2.jpg" alt="Imagen 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/3.jpg" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Especificaciones Técnicas -->
+    <section id="specs">
+        <div class="container">
+            <h2>Especificaciones Técnicas</h2>
+            <table class="table">
+                <tr>
+                    <td>Procesador</td>
+                    <td>Octa-core 2.5 GHz</td>
+                </tr>
+                <tr>
+                    <td>Memoria RAM</td>
+                    <td>8 GB</td>
+                </tr>
+                <tr>
+                    <td>Almacenamiento</td>
+                    <td>128 GB (ampliable con tarjeta microSD)</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <!-- Sección de Testimonios -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonios de Usuarios</h2>
+            <div class="testimonial">
+                <p>"¡Este celular ha cambiado mi vida! La calidad de la cámara es impresionante."</p>
+                <p class="author">- Juan Pérez</p>
+            </div>
+            <div class="testimonial">
+                <p>"Increíble duración de la batería. ¡Ya no tengo que preocuparme por cargar mi celular todo el tiempo!"</p>
+                <p class="author">- María González</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Contacto -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" class="form-control" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    
+    
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Nombre de la Empresa</p>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
